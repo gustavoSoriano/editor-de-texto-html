@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+        <title>EDITOR</title>
+        <link rel="stylesheet" href="css/icons.css">
+        <link rel="stylesheet" href="css/editor.css">
+	</head>
+
+	<body>
+		<input type="file" id="upload" hidden/>
+
+        <div id="parentEditor">
+            <div id="painelEditor">
+                <button class="btnColor"><i class="demo-icon icon-align-left" onclick="applyCommand('justifyLeft')" ></i></button>
+                <button class="btnColor"><i class="demo-icon icon-align-center" onclick="applyCommand('justifyCenter')" ></i></button>
+                <button class="btnColor"><i class="demo-icon icon-align-right" onclick="applyCommand('justifyRight')" ></i></button>
+                <button class="btnColor"><i class="demo-icon icon-align-justify" onclick="applyCommand('justifyFull')" ></i></button>
+
+                <button class="btnColor"><i class="demo-icon icon-bold"  onclick="applyCommand('bold')"></i></button>
+                <button class="btnColor"><i class="demo-icon icon-italic"  onclick="applyCommand('italic')" ></i></button>
+                <button class="btnColor"><i class="demo-icon icon-strike" onclick="applyCommand('strikeThrough')" ></i></button>
+                <button class="btnColor"><i class="demo-icon icon-underline" onclick="applyCommand('underline')"></i></button>
+
+                <button class="btnColor"><i class="demo-icon icon-indent-left" onclick="applyCommand('outdent')"></i></button>
+                <button class="btnColor"><i class="demo-icon icon-indent-right" onclick="applyCommand('indent')" ></i></button>
+                
+                <button class="btnColor"><i class="demo-icon icon-link" onclick="link()" ></i></button>
+                <button class="btnColor"><i class="demo-icon icon-ccw" onclick="applyCommand('redo')"></i></button>
+                <button class="btnColor"><i class="demo-icon icon-cw" onclick="applyCommand('undo')" ></i></button>
+                <label for="upload"><i class="demo-icon icon-picture"></i></label>
+ 
+                <i class="demo-icon icon-table"></i>
+
+                <button id="fontColor" class="btnColor">F</button>
+				<button id="backColor" class="btnColor">B</button>
+				<button id="paleta" class="jscolor {valueElement:null, value:'3c8dbc'}"></button>
+
+                <select type="text" id="inputFontSize" onchange="alterFont(this.value)" >
+                    <option value="2">10 pt</option>
+                    <option value="3">12 pt</option>
+                    <option value="4">14 pt</option>
+                    <option value="6">16 pt</option>
+                    <option value="7">18 pt</option>
+                </select>
+            </div>
+
+            <div id="editor" contenteditable="true">
+				<p>Olá, mundo!!</p>
+            </div>
+        </div>
+
+        <script src="js/jscolor.min.js"></script>
+		<script src="js/editor.js"></script>
+	</body>
+</html>
