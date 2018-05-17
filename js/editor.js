@@ -15,6 +15,7 @@ table.addEventListener("click", () => {
         t.border = "1"
         t.style.borderCollapse = "collapse"
         t.style.border = "1px solid #ccc"
+	t.style.margin = "auto"
 
         for( let l=0; l<linha; l++)
         {
