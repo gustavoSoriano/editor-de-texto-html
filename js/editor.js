@@ -16,6 +16,7 @@ table.addEventListener("click", () => {
         t.style.borderCollapse = "collapse"
         t.style.border = "1px solid #ccc"
 	t.style.margin = "auto"
+	t.style.textAlign = "center"
 
         for( let l=0; l<linha; l++)
         {
