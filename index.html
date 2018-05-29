@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-        <title>EDITOR HTML</title>
+        <title>EDITOR</title>
         <link rel="stylesheet" href="css/icons.css">
         <link rel="stylesheet" href="css/editor.css">
 	</head>
@@ -12,22 +12,22 @@
 
         <div id="parentEditor">
             <div id="painelEditor">
-                <button class="btnColor"><i class="demo-icon icon-align-left" onclick="applyCommand('justifyLeft')" ></i></button>
-                <button class="btnColor"><i class="demo-icon icon-align-center" onclick="applyCommand('justifyCenter')" ></i></button>
-                <button class="btnColor"><i class="demo-icon icon-align-right" onclick="applyCommand('justifyRight')" ></i></button>
-                <button class="btnColor"><i class="demo-icon icon-align-justify" onclick="applyCommand('justifyFull')" ></i></button>
+                <button class="btnColor" onclick="applyCommand('justifyLeft')"><i class="demo-icon icon-align-left"></i></button>
+                <button class="btnColor" onclick="applyCommand('justifyCenter')"><i class="demo-icon icon-align-center"></i></button>
+                <button class="btnColor" onclick="applyCommand('justifyRight')" ><i class="demo-icon icon-align-right"></i></button>
+                <button class="btnColor" onclick="applyCommand('justifyFull')" ><i class="demo-icon icon-align-justify"></i></button>
 
-                <button class="btnColor"><i class="demo-icon icon-bold"  onclick="applyCommand('bold')"></i></button>
-                <button class="btnColor"><i class="demo-icon icon-italic"  onclick="applyCommand('italic')" ></i></button>
-                <button class="btnColor"><i class="demo-icon icon-strike" onclick="applyCommand('strikeThrough')" ></i></button>
-                <button class="btnColor"><i class="demo-icon icon-underline" onclick="applyCommand('underline')"></i></button>
+                <button class="btnColor" onclick="applyCommand('bold')"><i class="demo-icon icon-bold"></i></button>
+                <button class="btnColor" onclick="applyCommand('italic')"><i class="demo-icon icon-italic"></i></button>
+                <button class="btnColor" onclick="applyCommand('strikeThrough')"><i class="demo-icon icon-strike"></i></button>
+                <button class="btnColor" onclick="applyCommand('underline')"><i class="demo-icon icon-underline"></i></button>
 
-                <button class="btnColor"><i class="demo-icon icon-indent-left" onclick="applyCommand('outdent')"></i></button>
-                <button class="btnColor"><i class="demo-icon icon-indent-right" onclick="applyCommand('indent')" ></i></button>
+                <button class="btnColor" onclick="applyCommand('outdent')"><i class="demo-icon icon-indent-left"></i></button>
+                <button class="btnColor" onclick="applyCommand('indent')"><i class="demo-icon icon-indent-right"></i></button>
                 
-                <button class="btnColor"><i class="demo-icon icon-link" onclick="link()" ></i></button>
-                <button class="btnColor"><i class="demo-icon icon-ccw" onclick="applyCommand('redo')"></i></button>
-                <button class="btnColor"><i class="demo-icon icon-cw" onclick="applyCommand('undo')" ></i></button>
+                <button class="btnColor" onclick="link()"><i class="demo-icon icon-link"  ></i></button>
+                <button class="btnColor" onclick="applyCommand('redo')"><i class="demo-icon icon-ccw" ></i></button>
+                <button class="btnColor" onclick="applyCommand('undo')"><i class="demo-icon icon-cw"  ></i></button>
                 <label for="upload"><i class="demo-icon icon-picture"></i></label>
  
                 <i class="demo-icon icon-table"></i>
